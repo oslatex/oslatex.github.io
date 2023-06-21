@@ -1,15 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One');
 
 * {
-    font-family: "Roboto Mono", monospace;
-    color: #000000;
-    text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: #000000;
+  text-align: center;
 }
 
 #PageTitle {
-    font-size: 65px;
+    font-size: 100px;
+    font-family: "Darumadrop One";
 }
 
+span {
+    font-family: inherit;
+}
+
+#ca {
+    color: #ECBD4F;
+}
+#na {
+    color: #EAF8BF;
+}
+
+#rd {
+    color: #87BFFF;
+}
 #logo {
     width: 170px;
     height: 170px;
