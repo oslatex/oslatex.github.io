@@ -64,10 +64,32 @@ div {
     font-size: 40px;
     margin-left: 30px;
 }
-<<<<<<< HEAD
 
-.grid-item {
-    width: 500px;
+.projects{
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 80px;
+    position: absolute;
+    left: 56px;
 }
-=======
->>>>>>> a69b7d2fd78236ecb47ed9aa419ef116453cc09c
+
+.grid-item{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    width: 336px;
+    height: 448px;
+    box-shadow: 4px 5px 5px 3px rgba(0, 0, 0, 0.25);
+    border-style: solid;
+}
+
+.grid-item:hover{
+    padding: 20px;
+}
+
+.projectlink {
+    text-decoration: none;
+}
