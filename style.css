@@ -8,8 +8,12 @@
 }
 
 #PageTitle {
-    font-size: 100px;
+    font-size: 130px;
     font-family: "Darumadrop One";
+}
+
+#mabite {
+    width: 500px;
 }
 
 span {
@@ -47,7 +51,20 @@ div {
     width: 30px;
 }
 
+.grid-item {
+    border: 2px solid black;
+}
+
+.gridimg {
+    width: 100px;
+    height: 100px;
+}
+
 .title {
     font-size: 40px;
     margin-left: 30px;
+}
+
+.grid-item {
+    width: 500px;
 }
