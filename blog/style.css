@@ -1,0 +1,10 @@
+* {
+    font-family: "Roboto Mono", monospace;
+    color: #000000;
+    text-align: center;
+  }
+
+  #blogTitle {
+    font-size: 130px;
+    font-family: "Darumadrop One";
+}
