@@ -130,3 +130,12 @@ nav {
 #newsTitle {
     font-size: 40px;
 }
+
+nav {
+    position: fixed;
+    overflow: hidden;
+}
+
+.article {
+    border: 1px solid grey;
+}
