@@ -11,7 +11,7 @@
     display: none;
   }
 
-#PageTitle {
+.PageTitle {
     font-size: 130px;
     font-family: "Darumadrop One";
 }
