@@ -89,7 +89,8 @@ div {
 }
 
 .grid-item:hover{
-    padding: 20px;
+    height: 110%;
+    width: 110%;
 }
 
 .projectlink {
