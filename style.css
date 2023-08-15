@@ -49,6 +49,13 @@ div {
 .icon {
     height: 30px;
     width: 30px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.icon:hover {
+  height: 40px;
+  width: 40px;
+  transform: rotate(180deg);
 }
 
 .grid-item {
