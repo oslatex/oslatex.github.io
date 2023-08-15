@@ -93,12 +93,12 @@ div {
     box-shadow: 4px 5px 5px 3px rgba(0, 0, 0, 0.25);
     border-style: solid;
     border-radius: 8%;
-    transition: width 1s, height 1s;
+    transition: width .5s, height .5s;
 }
 
 .grid-item:hover{
-    width: 360px;
-    height: 472px;
+    width: 370px;
+    height: 482px;
 }
 
 .projectlink {
