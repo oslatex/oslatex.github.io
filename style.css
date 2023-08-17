@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One');
+@keyframes titleAnimation  {
+    from {
+      visibility: hidden;
+      top: -4%;
+    }
+    to {
+      visibility: visible;
+      top: 120px;
+    }
+  }
 
+@keyframes navAnimation  {
+    from {
+      visibility: hidden;
+      left: -4%;
+    }
+    to {
+      visibility: visible;
+      left:automatic;
+    }
+  }
 * {
   font-family: "Roboto Mono", monospace;
   color: #000000;
@@ -12,6 +32,7 @@
   }
 
 .PageTitle {
+    animation: titleAnimation 3s;
     font-size: 130px;
     font-family: "Darumadrop One";
 }
@@ -118,6 +139,7 @@ div {
 }
 
 nav {
+    animation: navAnimation 2s;
     font-size: 24px;
     text-align: start;
     font-style: bold;
