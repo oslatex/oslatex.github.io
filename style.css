@@ -70,7 +70,7 @@ div {
 .icon {
     height: 30px;
     width: 30px;
-    transition: width 1s, height 1s, transform 1s;
+    transition: width 1s, height 1s, transform 0.5s;
 }
 
 .icon:hover {
