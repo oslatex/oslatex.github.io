@@ -76,7 +76,7 @@ div {
 .icon:hover {
   height: 40px;
   width: 40px;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .grid-item {
