@@ -11,10 +11,10 @@
 
 @keyframes navAnimation {
   from {
-    top: -20px;
+    left: -4%;
   }
   to {
-    top: 20px;
+    left: 10%;
   }
 }
 * {
