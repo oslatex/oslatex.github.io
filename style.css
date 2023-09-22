@@ -12,11 +12,9 @@
 @keyframes navAnimation  {
     from {
       visibility: hidden;
-      left: -4%;
     }
     to {
       visibility: visible;
-      left:automatic;
     }
   }
 * {
