@@ -9,14 +9,14 @@
     }
   }
 
-@keyframes navAnimation  {
-    from {
-      visibility: hidden;
-    }
-    to {
-      visibility: visible;
-    }
+@keyframes navAnimation {
+  from {
+    top: -20px;
   }
+  to {
+    top: 20px;
+  }
+}
 * {
   font-family: "Roboto Mono", monospace;
   color: #000000;
