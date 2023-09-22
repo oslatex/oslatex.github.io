@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One');
 @keyframes titleAnimation  {
     from {
-      visibility: hidden;
+      top: 0%;
     }
     to {
-      visibility: visible;
+      top: 20%;
     }
   }
 
