@@ -3,11 +3,9 @@
 @keyframes titleAnimation  {
     from {
       visibility: hidden;
-      top: -4%;
     }
     to {
       visibility: visible;
-      top: 120px;
     }
   }
 
