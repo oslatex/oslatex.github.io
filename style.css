@@ -1,20 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One');
-@keyframes titleAnimation  {
-    from {
-      top: 0%;
-    }
-    to {
-      top: 20%;
-    }
-  }
 
 @keyframes navAnimation {
   from {
     left: -4%;
   }
   to {
-    left: 0%
+    left: 6px;
   }
 }
 * {
