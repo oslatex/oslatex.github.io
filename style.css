@@ -6,7 +6,7 @@
     left: -4%;
   }
   to {
-    left: 6px;
+    left: 6.5px;
   }
 }
 * {
@@ -55,10 +55,13 @@ div {
     text-align: center;
 }
 
+#flecheverslebas {
+    position: relative;
+}
 .icon {
     height: 30px;
     width: 30px;
-    transition: width 1s, height 1s, transform 0.5s;
+    transition: transform 0.5s, width 1s, height 1s;
 }
 
 .icon:hover {
@@ -157,5 +160,6 @@ nav {
 
 .article {
     border: 1px solid grey;
-    margin: 5em;
+    margin: 3em;
+    padding: 20px;
 }
