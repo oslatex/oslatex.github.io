@@ -9,6 +9,9 @@
     left: 6.5px;
   }
 }
+body {
+    margin: 0;
+}
 * {
   font-family: "Roboto Mono", monospace;
   color: #000000;
@@ -130,6 +133,10 @@ div {
 }
 
 nav {
+    position: fixed;
+    /* Remove the following line */
+    /* overflow: hidden; */
+
     animation: navAnimation 2s;
     font-size: 24px;
     text-align: start;
