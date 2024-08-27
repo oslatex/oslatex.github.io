@@ -172,9 +172,12 @@ nav > #dot {
 
 
 
-.card {
+.cl {
+    flex: 1 1 130px;
+    margin: 5px;
+    width: 190px;
     padding: 24px;
-    height: 240px;
+    height: 210px;
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.20);
@@ -182,7 +185,11 @@ nav > #dot {
     backdrop-filter: blur(15px);
   }
 
-.card:hover {
+.col-3 {
+    width: 210px;
+}
+
+.cl:hover {
     transform: scale(1.05)
 }
 
@@ -195,6 +202,9 @@ nav > #dot {
 
 #bg {
     border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .back {
@@ -226,3 +236,14 @@ nav > #dot {
     white-space: normal;
     margin-bottom: 10px;
 }
+
+
+.front {
+    width: 100%;
+}
+
+.back {
+    width: 100%;
+}
+
+
