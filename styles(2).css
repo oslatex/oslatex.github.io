@@ -1,0 +1,257 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    overflow:  hidden;
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.nabla {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 100,
+        "EHLT" 12;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background-size: 100% 100%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 200;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+
+footer {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background-size: 100% 100%;
+}
+
+#pageTitle {
+    color: #fff;
+    font-size: 7rem;
+    position: relative;
+    margin-top: 3%;
+    text-align: center;
+    width: 100%;
+}
+
+#headImage {
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#location {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-top: 1%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+#socialContainer {
+    color: #fff;
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    height: 120%;
+}
+
+.socialIcon {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+}
+
+.socialIcon:hover {
+    transform: scale(1.2);
+}
+
+.skills {
+    color: #fff;
+    margin-left: 3%;
+    padding-top: 20px;
+}
+
+.skills>.progress {
+    margin-bottom: 20px;
+}
+
+#skillsTitle {
+    color: #fff;
+    text-align: left;
+    margin-left: 18%;
+    padding-bottom: 5%;
+}
+
+#projectsTitle {
+    text-align: center;
+    margin-right: 10%;
+    padding-bottom: 8%;
+}
+
+#desc {
+    color: #fff;
+}
+
+hr {
+    margin-left: 20%;
+    width: 60%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#sqlite3 {
+    font-size: 18px;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+}
+
+
+p {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    margin-top: 1%;
+    padding-left: 1%;
+}
+
+nav > a {
+    padding-left: 1%;
+    font-size: 20px;
+}
+
+nav > .dot {
+    padding-left: 1%;
+}
+
+.toast {
+    position: absolute; /* or fixed */
+    z-index: 9999; /* a high value to ensure it is on top */
+
+}
+
+
+
+.cl {
+    flex: 1 1 130px;
+    margin: 5px;
+    width: 160px;
+    padding: 24px;
+    height: 210px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+  }
+
+.col-3 {
+    width: 185px;;
+}
+
+.cl:hover {
+    transform: scale(1.05)
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#bg {
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.back {
+    display: none;
+}
+
+.cont:hover
+.front {
+    display: none;
+}
+
+.cont:hover
+.back {
+    display: block;
+}
+
+.cont:hover
+.back
+.card-body {
+    white-space: normal;
+    text-align: center;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.more-coming {
+    white-space: normal;
+    margin-bottom: 10px;
+}
+
+
+.front {
+    width: 100%;
+}
+
+.back {
+    width: 100%;
+}
+
+.dot {
+    color: #fff;
+}
+
+.not-clickable {
+    cursor: not-allowed;
+    color: red;
+}
