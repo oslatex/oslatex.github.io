@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="icon" href="/homepage/img/oxlatex.ico">
+        <title>Oslatex</title>
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html">Home</a>
+            <span id="dot">•</span>
+            <a href="../projects/index.html">Projects</a>
+            <span id="dot">•</span>
+            <a href="../friends/index.html">Friends</a>
+            <span id="dot">•</span>
+            <a href="#">Contact</a>
+        </nav>
+        <main>
+
+            <h1 id="contactTitle" class="nabla">
+                Contact me
+            </h1>
+            <div class="toast position-absolute end-0 opacity-100" style="autohide: false; margin-right: 1%;" role="alert" aria-live="assertive" aria-atomic="true" id="toast">
+                <div class="toast-header"  style="position: relative; z-index: 10;">
+                  <img src="../img/oslatex.png" style="height: 20px; width: 20px;" class="rounded-circle" alt="oslatex's profile picture">
+                  <strong class="me-auto" style="margin-left: 5px;">Oslatex</strong>
+                  <small id="time"></small>
+
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" data-bs-toggle="tooltip" data-bs-title="Close" data-bs-placement="bottom" aria-label="Close"></button>
+                </div>
+                <div class="toast-body text-dark"  style="position: relative; z-index: 10;">
+                    &#x1F4E9; Your message was sent! I'll try to answer you asap!
+                </div>
+              </div>
+            <div class="container">
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email" placeholder="john.doe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="Subject" id="subject" placeholder="I need a new website, can you code it?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="10" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae pharetra velit, vel ultricies massa. Praesent iaculis enim vel auctor scelerisque. Donec nisl lacus, volutpat vitae feugiat at, dictum quis nibh. Donec in placerat est. Fusce eleifend risus et dolor tempus, suscipit pellentesque ligula consectetur. Integer lacus ante, rhoncus ut mauris non, porttitor convallis enim. Integer vel scelerisque nunc. Aenean sed purus molestie, pharetra leo nec, porttitor arcu. Sed tempor venenatis sollicitudin. Maecenas eleifend egestas tortor a egestas. Maecenas imperdiet accumsan pellentesque. " required></textarea><br/>
+                    </div>
+                    <br/>
+                    <button id="sendButton" class="btn btn-primary" onclick="SendContactForm()" >Send</button>>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="text-center bg-dark text-white mt-4 p-1">
+                <p class="mb-0">2024 © Oslatex, All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
+<script>
+    function SendContactForm () {
+
+        event.preventDefault();
+        let name = document.getElementById('name').value
+        let email = document.getElementById('email').value
+        let subject = document.getElementById('subject').value
+        let message = document.getElementById('message').value
+        let toastEl = document.getElementById('toast')
+        let sendButton = document.getElementById("sendButton")
+
+        sendButton.disabled = true;
+
+        const request = new XMLHttpRequest();
+        request.open("POST", "https://discordapp.com/api/webhooks/1292127820109185035/elyqsCptV9X50yrG6Pw8_uUHG_Tsp5uHrDcnIpdDMmajoZ4PV-oKvMfKeBI_bbxo6cLM");
+        request.setRequestHeader('Content-type', 'application/json');
+
+
+
+        const params = {
+            username: "Oslatex contact",
+            avatar_url: "https://oslatex.github.io/img/oslatex.png",
+            content: `<@782996946192957461>\n# INCOMING MESSAGE\n**Author**: ${name} (${email})\n\n**Subject**: ${subject}\n**Message**:\n${message}`
+        }
+
+
+
+
+        request.send(JSON.stringify(params));
+
+        var toast = new bootstrap.Toast(toastEl, { autohide: false });
+        toast.show();
+        setTimeout(function() {
+            window.location.href = "../index.html";
+        }, 3000)
+
+
+    }
+
+</script>
