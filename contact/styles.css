@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    overflow:  hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.nabla {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 100,
+        "EHLT" 12;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background-size: 100% 100%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 200;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+
+footer {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background-size: 100% 100%;
+}
+
+p {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    margin-top: 1%;
+    padding-left: 1%;
+}
+
+nav > a {
+    padding-left: 1%;
+    font-size: 20px;
+}
+
+nav > #dot {
+    padding-left: 1%;
+}
+
+#contactTitle {
+    margin-top: 3%;
+    font-size: 7rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#dot {
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 40%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+#sendButton {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+#toast {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1%;
+    margin-right: 1%;
+}
